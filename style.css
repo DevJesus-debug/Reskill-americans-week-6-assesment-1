@@ -1,0 +1,132 @@
+
+
+/*  root variables**********/
+
+:root{
+    --orange: hsl(31,77%,52%);
+    --cyan: hsl(183, 100%, 22%);
+    --dark-cyan:hsl(179, 100%, 13%);
+    --transparent-white: hsla(0,0, 100%, 0.75);
+    --light-gray:hsl(0,0%,95%);
+}
+
+
+button{
+    padding: 13px 30px;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    text-transform: capitalize;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+
+.cont-1 button{
+    color: var(--orange);
+}
+
+.cont-2 button{
+    color: var(--cyan);
+}
+
+.cont-3 button{
+    color: var(--dark-cyan);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.grid-cont{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: repeat(3 , minmax(100px, 310px));
+    grid-auto-rows: 530px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+}
+
+.grid-cont .cont{
+    height: 100%;
+    padding: 50px;   
+    display: relative;
+    
+}
+
+.grid-cont .cont h2{
+    color:var(--light-gray);
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grid-cont .cont p{
+    color: var(--light-gray);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color: var(--light-gray);
+    line-height: 25px; 
+    height: 210px;
+}
+
+
+ .cont-1{
+    background-color: var(--orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+ .cont-2{
+    background-color: var(--cyan);
+}
+
+
+ .cont-3{
+    background-color: var(--dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+@media all and (max-width: 700px){
+
+    .grid-cont{
+        grid-template-columns: 1fr;
+       grid-template-rows: repeat( 3, 490px);
+    }
+
+    .wrap{
+        padding: 50px 30px;
+    }
+
+    .cont-1{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .cont-3{
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .grid-cont .cont p{
+        height: 160px;
+        line-height: 30px;
+    }
+  
+}
