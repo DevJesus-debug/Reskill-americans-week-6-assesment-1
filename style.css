@@ -106,13 +106,17 @@ button{
 
     .grid-cont{
         grid-template-columns: 1fr;
-       grid-template-rows: repeat( 3, 490px);
+        grid-template-rows: repeat( 3, 490px);
     }
 
     .wrap{
         padding: 50px 30px;
+        height: auto;
     }
 
+    button{
+        margin-top: 80px;
+    }
     .cont-1{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
@@ -125,8 +129,8 @@ button{
     }
 
     .grid-cont .cont p{
-        height: 160px;
-        line-height: 30px;
+        height: 100px;
+        line-height: 25px;
     }
   
 }
